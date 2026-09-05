@@ -28,3 +28,8 @@
 .perfil-usuario h2 { border-bottom: 1px solid #ccc; padding-bottom: 5px; margin-top: 20px; }
 .perfil-usuario ul { list-style: none; margin-top: 10px; margin-bottom: 20px; }
 .perfil-usuario li { margin-bottom: 8px; }
+.img-producto-destacado {
+    max-width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
