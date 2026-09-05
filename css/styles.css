@@ -88,3 +88,10 @@ nav a:hover {
     background-color: #00d2ff;
     color: #1a1a1a;
 }
+
+.productos-destacados h3{
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 26px;
+    
+}
