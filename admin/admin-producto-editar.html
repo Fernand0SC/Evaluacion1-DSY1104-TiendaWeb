@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Administrador - Editar Producto</title>
+    <link rel="stylesheet" href="admin-style.css">
+</head>
+<body>
+    <div class="admin-layout">
+        <aside class="sidebar">
+            <div class="brand"><h2>⚙️ Aura Admin</h2></div>
+            <nav class="admin-menu">
+                <ul>
+                    <li><a href="admin-home.html">Dashboard</a></li>
+                    <li><a href="admin-producto-editar.html" class="active">Editar Producto</a></li>
+                    <li><a href="admin-usuario-detalle.html">Detalle Usuarios</a></li>
+                </ul>
+                <br>
+                <ul><li><a href="../tienda/login.html" class="btn-logout">Cerrar sesión</a></li></ul>
+            </nav>
+        </aside>
+        <main class="main-content">
+            <header class="top-header"><h1>Editar Producto</h1></header>
+            <section class="content-area">
+                <form id="formProducto" class="admin-form">
+                    <div class="form-group">
+                        <label for="codigo">Código de Producto:</label>
+                        <input type="text" id="codigo" name="codigo">
+                        <span id="errCodigo" class="error-msg">Mínimo 3 caracteres.</span>
+                    </div>
+                    <div class="form-group">
+                        <label for="nombre">Nombre:</label>
+                        <input type="text" id="nombre" name="nombre" maxlength="100">
+                        <span id="errNombre" class="error-msg">Requerido (Máx 100).</span>
+                    </div>
+                    <div class="form-group">
+                        <label for="precio">Precio:</label>
+                        <input type="number" id="precio" name="precio" min="0" step="0.01">
+                        <span id="errPrecio" class="error-msg">Requerido (Mínimo 0).</span>
+                    </div>
+                    <div class="form-group">
+                        <label for="stock">Stock:</label>
+                        <input type="number" id="stock" name="stock" min="0">
+                        <span id="errStock" class="error-msg">Requerido (Solo enteros, Mínimo 0).</span>
+                    </div>
+                    <div class="form-group">
+                        <label for="categoria">Categoría:</label>
+                        <select id="categoria" name="categoria">
+                            <option value="">Seleccione una...</option>
+                            <option value="1">Electrónica</option>
+                            <option value="2">Ropa</option>
+                        </select>
+                        <span id="errCategoria" class="error-msg">Seleccione una categoría.</span>
+                    </div>
+                    <button type="submit" class="btn-submit">Guardar Producto</button>
+                </form>
+            </section>
+        </main>
+    </div>
+    <script src="../js/admin-producto-editar.js"></script>
+</body>
+</html>
