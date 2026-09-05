@@ -1,6 +1,65 @@
-#mensajeError{
-    color: red; 
+.seccion-contacto {
+    max-width: 600px; 
+    background-color: #ffffff; 
+    padding: 30px;
+    border-radius: 10px; 
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); 
+}
+
+.seccion-contacto h2 {
+    text-align: center;
+    margin-bottom: 25px;
+    color: #1a1a1a;
+}
+
+
+.formulario-contacto {
+    display: flex;
+    flex-direction: column; 
+    gap: 15px; 
+}
+
+.formulario-contacto label {
+    font-weight: bold;
+    color: #333;
+}
+
+.formulario-contacto input,
+.formulario-contacto textarea {
+    width: 100%; 
+    padding: 12px; 
+    border: 1px solid #ccc; 
+    border-radius: 5px;
+    font-family: inherit;
+    font-size: 16px;
+}
+
+.formulario-contacto input:focus,
+.formulario-contacto textarea:focus {
+    border-color: #00d2ff; 
+    outline: none; 
+    box-shadow: 0 0 5px rgba(0, 210, 255, 0.3); 
+}
+
+.formulario-contacto button {
+    background-color: #1a1a1a; 
+    color: white;
+    border: none;
+    padding: 15px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer; 
+    margin-top: 10px;
+    transition: background-color 0.3s; 
+}
+.formulario-contacto button:hover {
+    background-color: #00d2ff; 
+    color: #1a1a1a;
+}
+
+#mensajeError {
     font-weight: bold; 
     text-align: center; 
-    margin-top: 15px;
+    margin-top: 20px;
 }
