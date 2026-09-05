@@ -1,0 +1,39 @@
+/*se resetean los margenes los márgenes*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*cambio de fuente y color de fondo*/
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+/*estilo para header*/
+header {
+    background-color: #1a1a1a; /* Un color oscuro elegante */
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+/*estilo para el menú de navegación */
+nav {
+    margin-top: 15px;
+}
+
+/*estilo de los enlaces (botones menu)*/
+nav a {
+    color: white;
+    text-decoration: none; /* Le quita la línea fea de abajo a los enlaces */
+    margin: 0 15px; /* Los separa un poco entre sí */
+    font-size: 16px;
+}
+
+/*efecto estetico para botones(cambio de color al pasar cursor*/
+nav a:hover {
+    color: #00d2ff; /* Cambia a celeste al pasar el cursor */
+}
