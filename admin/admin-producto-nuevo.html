@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Administrador - Nuevo Producto</title>
+    <link rel="stylesheet" href="../css/admin-style.css">
+</head>
+<body>
+    <div class="admin-layout">
+        
+        <aside class="sidebar">
+            <div class="brand"><h2>⚙️ Aura Admin</h2></div>
+            <nav class="admin-menu">
+                <ul>
+                    <li><a href="admin-home.html">Dashboard</a></li>
+                    <li><a href="admin-producto-nuevo.html" class="active">Nuevo Producto</a></li>
+                    <li><a href="admin-producto-editar.html">Editar Producto</a></li>
+                    <li><a href="admin-producto-detalle.html">Detalle Producto</a></li>
+                    <li><a href="admin-usuario-detalle.html">Detalle Usuarios</a></li>
+                </ul>
+                <br>
+                <ul><li><a href="../login.html" class="btn-logout">Cerrar sesión</a></li></ul>
+            </nav>
+        </aside>
+
+        <main class="main-content">
+            <header class="top-header">
+                <h1>Agregar Nuevo Producto</h1>
+            </header>
+            
+            <section class="content-area">
+                <form id="formNuevoProducto" class="admin-form">
+                    
+                    <div class="form-group">
+                        <label for="nombreProd">Nombre del Producto:</label>
+                        <input type="text" id="nombreProd" name="nombreProd" placeholder="Ej: Memoria RAM 16GB">
+                        <span id="errNombre" class="error-msg">El nombre no puede estar vacío.</span>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="precioProd">Precio (Sin puntos ni letras):</label>
+                        <input type="text" id="precioProd" name="precioProd" placeholder="Ej: 45990">
+                        <span id="errPrecio" class="error-msg">Ingrese un precio válido (solo números).</span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="categoriaProd">Categoría:</label>
+                        <select id="categoriaProd" name="categoriaProd">
+                            <option value="">Seleccione una...</option>
+                            <option value="hardware">Hardware</option>
+                            <option value="perifericos">Periféricos</option>
+                            <option value="accesorios">Accesorios</option>
+                        </select>
+                        <span id="errCategoria" class="error-msg">Debe seleccionar una categoría.</span>
+                    </div>
+
+                    <button type="submit" class="btn-submit">Guardar Producto</button>
+                    
+                    <p id="mensajeExito" style="color: green; font-weight: bold; margin-top: 15px; display: none;">
+                        ¡Producto registrado correctamente!
+                    </p>
+                </form>
+            </section>
+        </main>
+        
+    </div>
+    
+    <script src="../js/admin-producto-nuevo.js"></script>
+</body>
+</html>
