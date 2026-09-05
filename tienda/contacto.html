@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - Aura Shop</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/contacto.css">
+</head>
+<body>
+
+    <header>
+        <h1>Aura Shop</h1>
+        <nav>
+            <a href="../index.html">Home</a>
+            <a href="productos.html">Productos</a>
+            <a href="nosotros.html">Nosotros</a>
+            <a href="blogs.html">Blogs</a>
+            <a href="contacto.html">Contacto</a>
+            <a href="login.html">Iniciar Sesion</a>
+            <a href="carrito.html">Carrito</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="seccion-contacto">
+            <h2>Ponte en Contacto</h2>
+            
+            <form class="formulario-contacto" onsubmit="event.preventDefault(); validarFormulario();">
+                
+                <label for="nombre">Nombre Completo:</label>
+                <input type="text" id="nombre" placeholder="Ej: Juan Pérez">
+
+                <label for="correo">Correo Electrónico:</label>
+                <input type="text" id="correo" placeholder="ejemplo@correo.com">
+
+                <label for="mensaje">Tu Mensaje:</label>
+                <textarea id="mensaje" rows="5" placeholder="¿En qué te podemos ayudar?"></textarea>
+
+                <button type="submit">Enviar Mensaje</button>
+            
+            </form>
+            <p id="mensajeError"></p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Aura Shop. Todos los derechos reservados.</p>
+    </footer>
+    <script src="../js/contacto.js"></script>
+</body>
+</html>
