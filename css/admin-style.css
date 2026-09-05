@@ -33,3 +33,9 @@
     border: 1px solid #ccc;
     border-radius: 8px;
 }
+.mensaje-exito {
+    color: green;
+    font-weight: bold;
+    margin-top: 15px;
+    display: none; 
+}
