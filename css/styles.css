@@ -37,3 +37,50 @@ nav a {
 nav a:hover {
     color: #00d2ff; /* Cambia a celeste al pasar el cursor */
 }
+
+/*estilo del Banner principal */
+.banner {
+    background-color: #e0e0e0;
+    text-align: center;
+    padding: 50px 20px;
+    margin-bottom: 30px;
+}
+
+/*Contenedor de los productos*/
+.contenedor-productos {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+/*Ddiseño de la tarjeta del producto */
+.tarjeta-producto {
+    background-color: white;
+    padding: 15px;
+    border-radius: 8px; 
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    text-align: center;
+    width: 220px;
+}
+
+.tarjeta-producto img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+/*botón de añadir al carrito */
+.tarjeta-producto button {
+    background-color: #1a1a1a;
+    color: white;
+    border: none;
+    padding: 10px;
+    margin-top: 15px;
+    cursor: pointer;
+    width: 100%;
+    border-radius: 5px;
+}
+
+.tarjeta-producto button:hover {
+    background-color: #00d2ff;
+    color: #1a1a1a;
+}
