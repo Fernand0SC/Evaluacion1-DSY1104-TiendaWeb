@@ -1,0 +1,76 @@
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Administración de Productos - Aura Shop</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/admin-style.css">
+</head>
+<body>
+
+    <div class="admin-layout">
+        <!-- Menú Lateral -->
+        <aside class="sidebar">
+            <div class="brand">
+                <h3>Aura Admin</h3>
+            </div>
+            <nav class="admin-menu">
+                <ul><li><a href="admin-home.html">Dashboard</a></li>
+                    <li><a href="admin-producto-nuevo.html">Nuevo Producto</a></li>
+                    <li><a href="admin-producto-editar.html">Editar Producto</a></li>
+                    <li><a href="admin-producto-detalle.html" class="active">Detalle Producto</a></li>
+                    <li><a href="admin-usuario-detalle.html">Detalle Usuarios</a></li>
+                    <li><a href="admin-productos.html">Ver todos los productos</a></li>
+                    <li><a href="admin-usuarios.html">Ver todos los usuarios</a></li>
+                    <li><a href="admin-usuario-nuevo.html">Añadir nuevo Usuario Admin</a></li>
+                    <li><a href="admin-editar-usuario.html">Editar Usuario Admin</a></li>
+                    <li><a href="../index.html" class="btn-logout">Cerrar Sesión</a></li>
+
+                </ul>
+            </nav>
+        </aside>
+
+        <!-- Contenido Central -->
+        <main class="main-content">
+            <header class="top-header">
+                <h2>Gestión de Productos</h2>
+                <span>Panel de Control</span>
+            </header>
+
+            <section class="content-area">
+                <div style="margin-bottom: 20px;">
+                    <a href="admin-producto-nuevo.html" class="btn-submit" style="text-decoration: none;">+ Nuevo Producto</a>
+                </div>
+
+                <!-- Tabla de Productos -->
+                <table style="width: 100%; border-collapse: collapse; background: white;" border="1" cellpadding="10">
+                    <thead>
+                        <tr style="background-color: #f4f5f7;">
+                            <th>Código</th>
+                            <th>Nombre</th>
+                            <th>Precio</th>
+                            <th>Stock</th>
+                            <th>Categoría</th>
+                            <th>Acciones</th>
+                        </tr>
+                    </thead>
+                    <tbody id="cuerpoTablaProductos">
+                        <tr>
+                            <td>P001</td>
+                            <td>Audífonos Gamer RGB</td>
+                            <td>$29.990</td>
+                            <td>15</td>
+                            <td>Accesorios</td>
+                            <td>
+                                <a href="admin-producto-editar.html" style="color: #007bff; text-decoration: none; font-weight: bold;">Editar</a> | 
+                                <a href="#" style="color: red; text-decoration: none; font-weight: bold;">Eliminar</a>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+        </main>
+    </div>
+
+</body>
+</html>
