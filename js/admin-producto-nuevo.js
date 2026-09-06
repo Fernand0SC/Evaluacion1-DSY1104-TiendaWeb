@@ -47,4 +47,5 @@ formulario.addEventListener('submit', function(evento) {
         mensajeExito.style.display = 'block';
         formulario.reset(); 
     }
-});
+}
+);
