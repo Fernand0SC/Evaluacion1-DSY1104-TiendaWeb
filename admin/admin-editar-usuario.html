@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editar Usuario - Aura Shop Admin</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/admin-style.css">
+</head>
+<body>
+    <div class="admin-layout">
+        <aside class="sidebar">
+            <div class="brand">
+                <h3>Aura Admin</h3>
+            </div>
+            <nav class="admin-menu">
+                <ul><li><a href="admin-home.html">Dashboard</a></li>
+                    <li><a href="admin-producto-nuevo.html">Nuevo Producto</a></li>
+                    <li><a href="admin-producto-editar.html">Editar Producto</a></li>
+                    <li><a href="admin-producto-detalle.html" class="active">Detalle Producto</a></li>
+                    <li><a href="admin-usuario-detalle.html">Detalle Usuarios</a></li>
+                    <li><a href="admin-productos.html">Ver todos los productos</a></li>
+                    <li><a href="admin-usuarios.html">Ver todos los usuarios</a></li>
+                    <li><a href="admin-usuario-nuevo.html">Añadir nuevo Usuario Admin</a></li>
+                    <li><a href="admin-editar-usuario.html">Editar Usuario Admin</a></li>
+                    <li><a href="../index.html" class="btn-logout">Cerrar Sesión</a></li>
+                </ul>
+            </nav>
+        </aside>
+        <main class="main-content">
+            <header class="top-header">
+                <h2>Editar Usuario</h2>
+                <span>Panel de Control</span>
+            </header>
+            <section class="content-area">
+                <form id="formularioEditarUsuario" class="admin-form">
+                    <div class="form-group">
+                        <label for="editarRun">RUN (Bloqueado):</label>
+                        <input type="text" id="editarRun" value="19011022K" readonly style="background-color: #e9ecef;">
+                    </div>
+                    <div class="form-group">
+                        <label for="editarNombre">Nombre Completo:</label>
+                        <input type="text" id="editarNombre" value="Manuel Gaete" required maxlength="50">
+                    </div>
+                    <div class="form-group">
+                        <label for="editarCorreo">Correo Electrónico:</label>
+                        <input type="email" id="editarCorreo" value="manuel@duoc.cl" required maxlength="100">
+                    </div>
+                    <div class="form-group">
+                        <label for="editarPassword">Nueva Contraseña (Opcional, 4 a 10 caracteres):</label>
+                        <input type="password" id="editarPassword" minlength="4" maxlength="10" placeholder="Dejar en blanco si no cambia">
+                    </div>
+                    <div class="form-group">
+                        <label for="editarRol">Tipo / Rol:</label>
+                        <select id="editarRol" required>
+                            <option value="admin" selected>Administrador</option>
+                            <option value="cliente">Cliente</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="btn-submit">Actualizar Usuario</button>
+                </form>
+            </section>
+        </main>
+    </div>
+    <script src="../js/validaciones-admin.js"></script>
+</body>
+</html>
