@@ -31,3 +31,20 @@ nav a {
 nav a:hover {
     color: #00d2ff;
 }
+
+.tabla-admin {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: white;
+}
+
+.tabla-admin th, 
+.tabla-admin td {
+    border: 1px solid #ccc; 
+    padding: 10px;          
+    text-align: left;
+}
+
+.tabla-admin thead tr {
+    background-color: #f4f5f7; 
+}
