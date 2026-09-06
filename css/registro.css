@@ -1,0 +1,76 @@
+/* --- ESTILOS PARA LA VISTA DE REGISTRO --- */
+.contenedor-principal-registro {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 80vh;
+    padding: 40px 20px;
+}
+
+.seccion-registro {
+    max-width: 600px;
+    width: 100%;
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.titulo-registro {
+    text-align: center;
+    margin-bottom: 25px;
+    color: #1a1a1a;
+}
+
+.formulario-registro {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.grupo-formulario {
+    display: flex;
+    flex-direction: column;
+}
+
+.grupo-formulario label {
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.grupo-formulario input,
+.grupo-formulario select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-family: inherit;
+    font-size: 16px;
+}
+
+.grupo-formulario input:focus,
+.grupo-formulario select:focus {
+    border-color: #00d2ff;
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 210, 255, 0.3);
+}
+
+.boton-enviar-registro {
+    background-color: #1a1a1a;
+    color: white;
+    border: none;
+    padding: 15px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background-color 0.3s;
+}
+
+.boton-enviar-registro:hover {
+    background-color: #00d2ff;
+    color: #1a1a1a;
+}

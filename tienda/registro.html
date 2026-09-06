@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Usuario - Tienda Online</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/registro.css">
+</head>
+<body>
+
+    <header>
+        <h1>Aura Shop</h1>
+        <nav>
+            <a href="../index.html">Home</a>
+            <a href="productos.html">Productos</a>
+            <a href="nosotros.html">Nosotros</a>
+            <a href="blogs.html">Blogs</a>
+            <a href="contacto.html">Contacto</a>
+            <a href="login.html">Iniciar Sesion</a>
+            <a href="carrito.html">Carrito</a>
+            <a href="registro.html">Registrarse</a>
+        </nav>
+    </header>
+    <main class="contenedor-principal-registro">
+        <section class="seccion-registro">
+            <h2 class="titulo-registro">Registro de Usuario</h2>
+            
+            <form id="formularioRegistro" class="formulario-registro">
+                <!-- RUN -->
+                <div class="grupo-formulario">
+                    <label for="campoRun">RUN (Sin puntos ni guion):</label>
+                    <input type="text" id="campoRun" required maxlength="9" placeholder="Ej: 19011022K">
+                </div>
+
+                <!-- Nombre Completo -->
+                <div class="grupo-formulario">
+                    <label for="campoNombre">Nombre Completo:</label>
+                    <input type="text" id="campoNombre" required maxlength="50" placeholder="Tu nombre completo">
+                </div>
+
+                <!-- Correo Electrónico -->
+                <div class="grupo-formulario">
+                    <label for="campoCorreo">Correo Electrónico:</label>
+                    <input type="email" id="campoCorreo" required maxlength="100" placeholder="correo@duoc.cl">
+                </div>
+
+                <!-- Contraseña -->
+                <div class="grupo-formulario">
+                    <label for="campoPassword">Contraseña:</label>
+                    <input type="password" id="campoPassword" required minlength="4" maxlength="10" placeholder="••••••••">
+                </div>
+
+                <!-- Teléfono (Opcional) -->
+                <div class="grupo-formulario">
+                    <label for="campoTelefono">Teléfono (Opcional):</label>
+                    <input type="tel" id="campoTelefono" placeholder="+569...">
+                </div>
+
+                <!-- Región y Comuna (Selectores) -->
+                <div class="grupo-formulario">
+                    <label for="selectorRegion">Seleccione Región:</label>
+                    <select id="selectorRegion" required>
+                        <option value="">-- Seleccione una región --</option>
+                        <option value="rm">Región Metropolitana de Santiago</option>
+                        <option value="araucania">Región de la Araucanía</option>
+                        <option value="nuble">Región de Ñuble</option>
+                    </select>
+                </div>
+
+                <div class="grupo-formulario">
+                    <label for="selectorComuna">Seleccione Comuna:</label>
+                    <select id="selectorComuna" required>
+                        <option value="">-- Seleccione una comuna --</option>
+                        <option value="puente-alto">Puente Alto</option>
+                        <option value="santiago">Santiago</option>
+                        <option value="linares">Linares</option>
+                        <option value="concepcion">Concepción</option>
+                    </select>
+                </div>
+
+                <!-- Botón Registrar -->
+                <button type="submit" class="boton-enviar-registro">Registrar</button>
+            </form>
+        </section>
+    </main>
+
+    <!-- Vinculación del JavaScript de validaciones -->
+    <script src="js/validaciones.js"></script>
+</body>
+</html>
