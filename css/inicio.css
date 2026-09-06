@@ -37,6 +37,14 @@
     border-radius: 5px;
 }
 
+.tarjeta-producto h4 {
+    min-height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 8px 0;
+}
+
 .tarjeta-producto button {
     background-color: #1a1a1a;
     color: white;
