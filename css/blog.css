@@ -1,0 +1,44 @@
+/* --- ESTILOS PARA LA SECCIÓN DE BLOGS --- */
+.blogs-main {
+    padding: 30px 20px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.blogs-titulo {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+.blog-card {
+    border: 1px solid #e0e0e0;
+    padding: 25px;
+    margin-bottom: 25px;
+    border-radius: 8px;
+    background: #ffffff;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.blog-card h3 {
+    color: #2c3e50;
+    margin-bottom: 12px;
+    font-size: 20px;
+}
+
+.blog-card p {
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.blog-link {
+    display: inline-block;
+    color: #007bff;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.blog-link:hover {
+    text-decoration: underline;
+}
