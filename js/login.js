@@ -8,6 +8,8 @@ document.getElementById('formLogin').addEventListener('submit', function(event) 
 
     if (!correoInput) {
         errorCorreo.textContent = "El correo es requerido."; errorCorreo.style.display = "block"; isValid = false;
+    } else if (correoInput.length > 100) { 
+        errorCorreo.textContent = "El correo no puede tener más de 100 caracteres."; errorCorreo.style.display = "block"; isValid = false;
     } else if (!regexCorreo.test(correoInput)) {
         errorCorreo.textContent = "Solo correos @duoc.cl, @profesor.duoc.cl o @gmail.com."; errorCorreo.style.display = "block"; isValid = false;
     } else {
