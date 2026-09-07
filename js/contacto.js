@@ -17,7 +17,7 @@ function validarFormulario() {
         parrafoAlerta.style.color = "red";
     } 
     else if (textoCorreo.endsWith("@duoc.cl") == false && textoCorreo.endsWith("@gmail.com") == false
-        && textoCorreo.endsWith("@profesor.duoc.cl ") == false) {
+        && textoCorreo.endsWith("@profesor.duoc.cl") == false) {
         parrafoAlerta.textContent = "Error: El correo debe ser @duoc.cl, @profesor.duoc.cl o @gmail.com.";
         parrafoAlerta.style.color = "red";
     }else if (textoMensaje == ""){

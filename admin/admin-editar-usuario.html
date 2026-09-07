@@ -36,27 +36,36 @@
                 <form id="formularioEditarUsuario" class="admin-form">
                     <div class="form-group">
                         <label for="editarRun">RUN (Bloqueado):</label>
-                        <input type="text" id="editarRun" value="19011022K" readonly style="background-color: #e9ecef;">
+                        <input type="text" id="editarRun" value="19011022K" readonly class="input-bloqueado">
                     </div>
+
                     <div class="form-group">
                         <label for="editarNombre">Nombre Completo:</label>
-                        <input type="text" id="editarNombre" value="Manuel Gaete" required maxlength="50">
+                        <input type="text" id="editarNombre" value="Manuel Gaete">
+                        <span id="errorEditarNombre" style="color: red; display: none; font-size: 12px;"></span>
                     </div>
+
                     <div class="form-group">
                         <label for="editarCorreo">Correo Electrónico:</label>
-                        <input type="email" id="editarCorreo" value="manuel@duoc.cl" required maxlength="100">
+                        <input type="email" id="editarCorreo" value="manuel@duoc.cl">
+                        <span id="errorEditarCorreo" style="color: red; display: none; font-size: 12px;"></span>
                     </div>
+
                     <div class="form-group">
                         <label for="editarPassword">Nueva Contraseña (Opcional, 4 a 10 caracteres):</label>
-                        <input type="password" id="editarPassword" minlength="4" maxlength="10" placeholder="Dejar en blanco si no cambia">
+                        <input type="password" id="editarPassword" placeholder="Dejar en blanco si no cambia">
+                        <span id="errorEditarPassword" style="color: red; display: none; font-size: 12px;"></span>
                     </div>
+
                     <div class="form-group">
                         <label for="editarRol">Tipo / Rol:</label>
-                        <select id="editarRol" required>
+                        <select id="editarRol">
                             <option value="admin" selected>Administrador</option>
                             <option value="cliente">Cliente</option>
                         </select>
+                        <span id="errorEditarRol" style="color: red; display: none; font-size: 12px;"></span>
                     </div>
+
                     <button type="submit" class="btn-submit">Actualizar Usuario</button>
                 </form>
             </section>
