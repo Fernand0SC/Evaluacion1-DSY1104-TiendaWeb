@@ -66,3 +66,10 @@ nav a:hover {
 .btn-eliminar:hover {
     text-decoration: underline;
 }
+
+.contenedor-login {
+    max-width: 400px;
+    margin: 100px auto; 
+    padding: 30px;
+    min-height: 50vh; 
+}
