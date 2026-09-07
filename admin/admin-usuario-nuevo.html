@@ -39,27 +39,36 @@
                 <form id="formularioNuevoUsuario" class="admin-form">
                     <div class="form-group">
                         <label for="nuevoRun">RUN (Sin puntos ni guion):</label>
-                        <input type="text" id="nuevoRun" required maxlength="9" placeholder="Ej: 19011022K">
+                        <input type="text" id="nuevoRun" placeholder="Ej: 19011022K">
+                        <span id="errorNuevoRun" style="color: red; display: none; font-size: 12px;"></span>
                     </div>
+
                     <div class="form-group">
                         <label for="nuevoNombre">Nombre Completo:</label>
-                        <input type="text" id="nuevoNombre" required maxlength="50" placeholder="Nombre completo">
+                        <input type="text" id="nuevoNombre"placeholder="Nombre completo">
+                        <span id="errorNuevoNombre" style="color: red; display: none; font-size: 12px;"></span>
                     </div>
+
                     <div class="form-group">
                         <label for="nuevoCorreo">Correo Electrónico:</label>
-                        <input type="email" id="nuevoCorreo" required maxlength="100" placeholder="correo@duoc.cl">
+                        <input type="email" id="nuevoCorreo"placeholder="correo@duoc.cl">
+                        <span id="errorNuevoCorreo" style="color: red; display: none; font-size: 12px;"></span>
                     </div>
+
                     <div class="form-group">
                         <label for="nuevoPassword">Contraseña (4 a 10 caracteres):</label>
-                        <input type="password" id="nuevoPassword" required minlength="4" maxlength="10" placeholder="••••••••">
+                        <input type="password" id="nuevoPassword" placeholder="••••••••">
+                        <span id="errorNuevoPassword" style="color: red; display: none; font-size: 12px;"></span>
                     </div>
+
                     <div class="form-group">
                         <label for="nuevoRol">Tipo / Rol:</label>
-                        <select id="nuevoRol" required>
+                        <select id="nuevoRol">
                             <option value="">-- Seleccione Rol --</option>
                             <option value="admin">Administrador</option>
                             <option value="cliente">Cliente</option>
                         </select>
+                        <span id="errorNuevoRol" style="color: red; display: none; font-size: 12px;"></span>
                     </div>
                     <button type="submit" class="btn-submit">Guardar Usuario</button>
                 </form>

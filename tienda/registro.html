@@ -30,25 +30,29 @@
                 <!-- RUN -->
                 <div class="grupo-formulario">
                     <label for="campoRun">RUN (Sin puntos ni guion):</label>
-                    <input type="text" id="campoRun" required maxlength="9" placeholder="Ej: 19011022K">
+                    <input type="text" id="campoRun" placeholder="Ej: 19011022K">
+                    <span id="errorRun" style="color: red; display: none; font-size: 12px;"></span>
                 </div>
 
                 <!-- Nombre Completo -->
                 <div class="grupo-formulario">
                     <label for="campoNombre">Nombre Completo:</label>
-                    <input type="text" id="campoNombre" required maxlength="50" placeholder="Tu nombre completo">
+                    <input type="text" id="campoNombre" placeholder="Tu nombre completo">
+                    <span id="errorNombre" style="color: red; display: none; font-size: 12px;"></span>
                 </div>
 
                 <!-- Correo Electrónico -->
                 <div class="grupo-formulario">
                     <label for="campoCorreo">Correo Electrónico:</label>
-                    <input type="email" id="campoCorreo" required maxlength="100" placeholder="correo@duoc.cl">
+                    <input type="email" id="campoCorreo" placeholder="correo@duoc.cl">
+                    <span id="errorCorreo" style="color: red; display: none; font-size: 12px;"></span>
                 </div>
 
                 <!-- Contraseña -->
                 <div class="grupo-formulario">
                     <label for="campoPassword">Contraseña:</label>
-                    <input type="password" id="campoPassword" required minlength="4" maxlength="10" placeholder="••••••••">
+                    <input type="password" id="campoPassword" placeholder="••••••••">
+                    <span id="errorPassword" style="color: red; display: none; font-size: 12px;"></span>
                 </div>
 
                 <!-- Teléfono (Opcional) -->
@@ -60,7 +64,7 @@
                 <!-- Región y Comuna (Selectores) -->
                 <div class="grupo-formulario">
                     <label for="selectorRegion">Seleccione Región:</label>
-                    <select id="selectorRegion" required>
+                    <select id="selectorRegion">
                         <option value="">-- Seleccione una región --</option>
                         <option value="rm">Región Metropolitana de Santiago</option>
                         <option value="araucania">Región de la Araucanía</option>
@@ -70,7 +74,7 @@
 
                 <div class="grupo-formulario">
                     <label for="selectorComuna">Seleccione Comuna:</label>
-                    <select id="selectorComuna" required>
+                    <select id="selectorComuna">
                         <option value="">-- Seleccione una comuna --</option>
                         <option value="puente-alto">Puente Alto</option>
                         <option value="santiago">Santiago</option>
